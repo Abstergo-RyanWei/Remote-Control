@@ -13,7 +13,7 @@ for device in arduinos:
         print "Failed to connect on",device
 
 while True:
-    line=arduino.readline();
-    time.sleep(0.1)
-    if line=='a':
+    line=arduino.read();
+    #print line
+    if line=="a":
         shell.sendKeys("{ }")
