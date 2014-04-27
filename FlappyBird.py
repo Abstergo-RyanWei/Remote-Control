@@ -14,6 +14,5 @@ for device in arduinos:
 
 while True:
     line=arduino.read();
-    #print line
     if line=="a":
         shell.sendKeys("{ }")
